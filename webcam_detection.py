@@ -3,8 +3,8 @@ import cv2
 import time
 
 def main():
-    # Load the YOLOv8 model (it will download the default model if not present)
-    model = YOLO('yolov8n.pt')
+    # Load the YOLO11 model (it will download the default model if not present)
+    model = YOLO('yolov11n.pt')  # Using YOLO11 nano model for efficiency
 
     # Open the webcam (0 is usually the default USB camera)
     cap = cv2.VideoCapture(0)
@@ -15,7 +15,7 @@ def main():
         return
 
     # Set the window name
-    window_name = "YOLOv8 Webcam Detection"
+    window_name = "YOLO11 Webcam Detection"
     cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
 
     try:
@@ -26,7 +26,7 @@ def main():
                 print("Error: Could not read frame")
                 break
 
-            # Run YOLOv8 inference on the frame
+            # Run YOLO11 inference on the frame
             results = model(frame)
 
             # Visualize the results on the frame

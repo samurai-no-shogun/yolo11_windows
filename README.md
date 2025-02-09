@@ -1,10 +1,10 @@
-# YOLOv8 Windows Real-time Object Detection
+# YOLO11 Windows Real-time Object Detection
 
-This project implements real-time object detection using YOLOv8 with webcam input on Windows. It provides an easy-to-use setup for running YOLOv8 object detection on live webcam feed.
+This project implements real-time object detection using YOLO11 with webcam input on Windows. It provides an easy-to-use setup for running YOLO11 object detection on live webcam feed.
 
 ## Features
 
-- Real-time object detection using YOLOv8
+- Real-time object detection using YOLO11 (latest version with improved performance)
 - Webcam integration for live video feed
 - Simple and clean Python implementation
 - Visual display of detection results
@@ -14,7 +14,7 @@ This project implements real-time object detection using YOLOv8 with webcam inpu
 
 - Python 3.8 or higher
 - OpenCV (cv2)
-- Ultralytics YOLOv8
+- Ultralytics YOLO11
 - A working webcam
 
 ## Installation
@@ -38,7 +38,7 @@ python webcam_detection.py
 ```
 
 2. The script will:
-   - Load the YOLOv8 model (downloads the default model if not present)
+   - Load the YOLO11 model (downloads the default model if not present)
    - Open your default webcam
    - Display the detection results in real-time
    - Press 'q' to quit the application
@@ -46,9 +46,10 @@ python webcam_detection.py
 ## Implementation Details
 
 The project uses:
-- `ultralytics` package for YOLOv8 implementation
+- `ultralytics` package for YOLO11 implementation
 - `cv2` (OpenCV) for webcam handling and display
-- YOLOv8n model (nano version) for efficient real-time detection
+- YOLO11n model (nano version) for efficient real-time detection
+- Latest YOLO11 features for improved accuracy and performance
 
 ## File Structure
 
